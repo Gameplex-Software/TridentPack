@@ -1,0 +1,223 @@
+---- Minecraft Crash Report ----
+
+WARNING: coremods are present:
+  XaeroMinimapPlugin (Xaeros_Minimap_21.15.0.1_Forge_1.12.jar)
+  TransformLoader (DynamicSurroundings-1.12.2-3.6.1.0.jar)
+  IELoadingPlugin (ImmersiveEngineering-core-0.12-98.jar)
+  LittlePatchingLoader (LittleTiles_v1.5.20_mc1.12.2.jar)
+  TransformerLoader (OpenComputers-MC1.12.2-1.7.5.192.jar)
+  OTGCorePlugin (OTG-Core.jar)
+  Do not report to Forge! (If you haven't disabled the FoamFix coremod, try disabling it in the config! Note that this bit of text will still appear.) (foamfix-0.10.14-1.12.2.jar)
+  BewitchmentFMLLoadingPlugin (bewitchment-1.12.2-0.0.22.64.jar)
+  CreativePatchingLoader (CreativeCore_v1.10.63_mc1.12.2.jar)
+  CTMCorePlugin (CTM-MC1.12.2-1.0.2.31.jar)
+  AdvancedRocketryPlugin (AdvancedRocketry-1.12.2-1.7.0-232-universal.jar)
+  EnderCorePlugin (EnderCore-1.12.2-0.5.76-core.jar)
+  PhosphorFMLLoadingPlugin (phosphor-1.12.2-0.2.6+build50-universal.jar)
+  MalisisCorePlugin (malisiscore-1.12.2-6.5.1.jar)
+Contact their authors BEFORE contacting forge
+
+// Ooh. Shiny.
+
+Time: 8/26/21 11:13 AM
+Description: Unexpected error
+
+java.lang.RuntimeException: glCheckFramebufferStatus returned unknown status:33305
+	at net.minecraft.client.shader.Framebuffer.func_147611_b(Framebuffer.java:177)
+	at net.minecraft.client.shader.Framebuffer.func_147613_a(Framebuffer.java:58)
+	at net.minecraft.client.shader.Framebuffer.<init>(Framebuffer.java:38)
+	at net.minecraft.client.LoadingScreenRenderer.<init>(LoadingScreenRenderer.java:31)
+	at net.minecraft.client.Minecraft.func_71370_a(Minecraft.java:1682)
+	at net.minecraft.client.Minecraft.func_175604_i(Minecraft.java:1231)
+	at net.minecraft.client.Minecraft.func_175601_h(Minecraft.java:1207)
+	at net.minecraft.client.Minecraft.func_71411_J(Minecraft.java:1153)
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:398)
+	at net.minecraft.client.main.Main.main(SourceFile:123)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Mac OS X (x86_64) version 10.16
+	Java Version: 1.8.0_242, AdoptOpenJDK
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), AdoptOpenJDK
+	Memory: 1008413304 bytes (961 MB) / 2214592512 bytes (2112 MB) up to 9544663040 bytes (9102 MB)
+	JVM Flags: 3 total; -Xmx10240m -Xms10240m -Xms256m
+	IntCache: cache: 0, tcache: 0, allocated: 2, tallocated: 30
+	FML: MCP 9.42 Powered by Forge 14.23.5.2855 77 mods loaded, 77 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	| State  | ID                                | Version                  | Source                                          | Signature                                |
+	|:------ |:--------------------------------- |:------------------------ |:----------------------------------------------- |:---------------------------------------- |
+	| LCHIJA | minecraft                         | 1.12.2                   | minecraft.jar                                   | None                                     |
+	| LCHIJA | mcp                               | 9.42                     | minecraft.jar                                   | None                                     |
+	| LCHIJA | FML                               | 8.0.99.99                | forge-1.12.2-14.23.5.2855.jar                   | e3c3d50c7c986df74c645c0ac54639741c90a557 |
+	| LCHIJA | forge                             | 14.23.5.2855             | forge-1.12.2-14.23.5.2855.jar                   | e3c3d50c7c986df74c645c0ac54639741c90a557 |
+	| LCHIJA | advancedrocketrycore              | 1                        | minecraft.jar                                   | None                                     |
+	| LCHIJA | creativecoredummy                 | 1.0.0                    | minecraft.jar                                   | None                                     |
+	| LCHIJA | littletilescore                   | 1.0.0                    | minecraft.jar                                   | None                                     |
+	| LCHIJA | otgcore                           | 1.12.2-v9.3              | minecraft.jar                                   | None                                     |
+	| LCHIJA | xaerominimap_core                 | 1.12.2-1.0               | minecraft.jar                                   | None                                     |
+	| LCHIJA | foamfixcore                       | 7.7.4                    | minecraft.jar                                   | None                                     |
+	| LCHIJA | opencomputers|core                | 1.7.5.192                | minecraft.jar                                   | None                                     |
+	| LCHIJA | jei                               | 4.16.1.301               | jei_1.12.2-4.16.1.301.jar                       | None                                     |
+	| LCHIJA | ctm                               | MC1.12.2-1.0.2.31        | CTM-MC1.12.2-1.0.2.31.jar                       | None                                     |
+	| LCHIJA | chisel                            | MC1.12.2-1.0.2.45        | Chisel-MC1.12.2-1.0.2.45.jar                    | None                                     |
+	| LCHIJA | baubles                           | 1.5.2                    | Baubles-1.12-1.5.2.jar                          | None                                     |
+	| LCHIJA | endercore                         | 1.12.2-0.5.76            | EnderCore-1.12.2-0.5.76.jar                     | None                                     |
+	| LCHIJA | enderio                           | 5.3.70                   | EnderIO-1.12.2-5.3.70.jar                       | None                                     |
+	| LCHIJA | enderiointegrationtic             | 5.3.70                   | EnderIO-1.12.2-5.3.70.jar                       | None                                     |
+	| LCHIJA | mantle                            | 1.12-1.3.3.55            | Mantle-1.12-1.3.3.55.jar                        | None                                     |
+	| LCHIJA | twilightforest                    | 3.11.1021                | twilightforest-1.12.2-3.11.1021-universal.jar   | None                                     |
+	| LCHIJA | tconstruct                        | 1.12.2-2.13.0.183        | TConstruct-1.12.2-2.13.0.183.jar                | None                                     |
+	| LCHIJA | immersiveengineering              | 0.12-98                  | ImmersiveEngineering-0.12-98.jar                | None                                     |
+	| LCHIJA | libvulpes                         | 0.4.2.-84                | LibVulpes-1.12.2-0.4.2-84-universal.jar         | None                                     |
+	| LCHIJA | advancedrocketry                  | 1.7.0.-232               | AdvancedRocketry-1.12.2-1.7.0-232-universal.jar | None                                     |
+	| LCHIJA | appliedenergistics2               | rv6-stable-7             | appliedenergistics2-rv6-stable-7.jar            | dfa4d3ac143316c6f32aa1a1beda1e34d42132e5 |
+	| LCHIJA | betterhud                         | 1.4.4                    | betterhud-1.12.2-1.4.4.jar                      | None                                     |
+	| LCHIJA | dynamictrees                      | 1.12.2-0.9.24            | DynamicTrees-1.12.2-0.9.24.jar                  | None                                     |
+	| LCHIJA | patchouli                         | 1.0-23.6                 | Patchouli-1.0-23.6.jar                          | None                                     |
+	| LCHIJA | bewitchment                       | 0.22.63                  | bewitchment-1.12.2-0.0.22.64.jar                | None                                     |
+	| LCHIJA | biomecolorizer                    | 1.0.0                    | BiomeColorizer-1.12.2-v1.0.2.jar                | None                                     |
+	| LCHIJA | chiseled_me                       | 1.12-3.0.0.0-git-7c6a1ba | chiseled-me-1.12-3.0.0.0-git-7c6a1ba.jar        | c677c954974252994736eb15e855e1e6fc5a2e62 |
+	| LCHIJA | clumps                            | 3.1.2                    | Clumps-3.1.2.jar                                | None                                     |
+	| LCHIJA | creativecore                      | 1.10.0                   | CreativeCore_v1.10.63_mc1.12.2.jar              | None                                     |
+	| LCHIJA | orelib                            | 3.6.0.1                  | OreLib-1.12.2-3.6.0.1.jar                       | 7a2128d395ad96ceb9d9030fbd41d035b435753a |
+	| LCHIJA | dsurround                         | 3.6.1.0                  | DynamicSurroundings-1.12.2-3.6.1.0.jar          | 7a2128d395ad96ceb9d9030fbd41d035b435753a |
+	| LCHIJA | dynamictreesttf                   | 1.12.2-1.2.3             | dynamictreesTheTwilightForest-1.12.2-1.2.3.jar  | None                                     |
+	| LCHIJA | dynamictreestconstruct            | 1.12.2-1.2.7             | DynamicTreesTinkersConstruct-1.12.2-1.2.7.jar   | None                                     |
+	| LCHIJA | ebwizardry                        | 4.3.4                    | ElectroblobsWizardry-4.3.4-MC1.12.2.jar         | None                                     |
+	| LCHIJA | enderiobase                       | 5.3.70                   | EnderIO-1.12.2-5.3.70.jar                       | None                                     |
+	| LCHIJA | enderioconduits                   | 5.3.70                   | EnderIO-1.12.2-5.3.70.jar                       | None                                     |
+	| LCHIJA | enderioconduitsappliedenergistics | 5.3.70                   | EnderIO-1.12.2-5.3.70.jar                       | None                                     |
+	| LCHIJA | opencomputers                     | 1.7.5.192                | OpenComputers-MC1.12.2-1.7.5.192.jar            | None                                     |
+	| LCHIJA | enderioconduitsopencomputers      | 5.3.70                   | EnderIO-1.12.2-5.3.70.jar                       | None                                     |
+	| LCHIJA | enderioconduitsrefinedstorage     | 5.3.70                   | EnderIO-1.12.2-5.3.70.jar                       | None                                     |
+	| LCHIJA | enderiointegrationforestry        | 5.3.70                   | EnderIO-1.12.2-5.3.70.jar                       | None                                     |
+	| LCHIJA | enderiointegrationticlate         | 5.3.70                   | EnderIO-1.12.2-5.3.70.jar                       | None                                     |
+	| LCHIJA | enderioinvpanel                   | 5.3.70                   | EnderIO-1.12.2-5.3.70.jar                       | None                                     |
+	| LCHIJA | enderiomachines                   | 5.3.70                   | EnderIO-1.12.2-5.3.70.jar                       | None                                     |
+	| LCHIJA | enderiopowertools                 | 5.3.70                   | EnderIO-1.12.2-5.3.70.jar                       | None                                     |
+	| LCHIJA | extra_spells                      | 1.2.0                    | ExtraSpells-1.12.2-1.2.0.jar                    | None                                     |
+	| LCHIJA | extrautils2                       | 1.0                      | extrautils2-1.12-1.9.9.jar                      | None                                     |
+	| LCHIJA | zerocore                          | 1.12.2-0.1.2.9           | zerocore-1.12.2-0.1.2.9.jar                     | None                                     |
+	| LCHIJA | bigreactors                       | 1.12.2-0.4.5.68          | ExtremeReactors-1.12.2-0.4.5.68.jar             | None                                     |
+	| LCHIJA | fbp                               | 2.4.1                    | FancyBlockParticles-1.12.x-2.4.1.jar            | None                                     |
+	| LCHIJA | foamfix                           | 0.10.14-1.12.2           | foamfix-0.10.14-1.12.2.jar                      | None                                     |
+	| LCHIJA | waila                             | 1.8.26                   | Hwyla-1.8.26-B41_1.12.2.jar                     | None                                     |
+	| LCHIJA | immersivecables                   | 1.3.2                    | ImmersiveCables-1.12.2-1.3.2.jar                | None                                     |
+	| LCHIJA | immersivepetroleum                | 1.1.10                   | immersivepetroleum-1.12.2-1.1.10.jar            | None                                     |
+	| LCHIJA | immersiveposts                    | 0.2.1                    | ImmersivePosts-0.2.1.jar                        | 0ba8738eadcf158e7fe1452255a73a022fb15feb |
+	| LCHIJA | ironchest                         | 1.12.2-7.0.67.844        | ironchest-1.12.2-7.0.72.847.jar                 | None                                     |
+	| LCHIJA | littletiles                       | 1.5.0                    | LittleTiles_v1.5.20_mc1.12.2.jar                | None                                     |
+	| LCHIJA | malisiscore                       | 1.12.2-6.5.1-SNAPSHOT    | malisiscore-1.12.2-6.5.1.jar                    | None                                     |
+	| LCHIJA | malisisdoors                      | 1.12.2-7.3.0             | malisisdoors-1.12.2-7.3.0.jar                   | None                                     |
+	| LCHIJA | immersivetech                     | 1.8.94                   | MCTImmersiveTechnology-1.12.2-1.8.94.jar        | None                                     |
+	| LCHIJA | mobends                           | 1.0.0-beta-20.06.20      | MoBends_1.12.2-1.0.0-beta-20.06.20.jar          | None                                     |
+	| LCHIJA | openterraingenerator              | v9.3                     | OpenTerrainGenerator-1.12.2-v9.3.jar            | None                                     |
+	| LCHIJA | tfspellpack                       | 1.1.0                    | TFSpellPack-1.1.0-MC1.12.2.jar                  | None                                     |
+	| LCHIJA | tinkersoc                         | 0.6                      | tinkersoc-0.6.jar                               | None                                     |
+	| LCHIJA | travelersdream                    | 1.1                      | Traveler'sDream-Compact-1.12.2-v1.2.jar         | None                                     |
+	| LCHIJA | undergroundbiomes                 | 1.3.8                    | UndergroundBiomesConstructs-1.12-1.3.8.jar      | None                                     |
+	| LCHIJA | unlimitedchiselworks              | 0.3.5                    | UnlimitedChiselWorks-0.3.5.jar                  | None                                     |
+	| LCHIJA | wawla                             | 2.6.275                  | Wawla-1.12.2-2.6.275.jar                        | d476d1b22b218a10d845928d1665d45fce301b27 |
+	| LCHIJA | waystones                         | 4.1.0                    | Waystones_1.12.2-4.1.0.jar                      | None                                     |
+	| LCHIJA | worldedit                         | 6.1.10                   | worldedit-forge-mc1.12.2-6.1.10-dist.jar        | None                                     |
+	| LCHIJA | worldeditcuife3                   | 3.0.9                    | WorldEdit-CUI-FE3-1.12.2-3.0.9.jar              | None                                     |
+	| LCHIJA | xaerominimap                      | 21.15.0.1                | Xaeros_Minimap_21.15.0.1_Forge_1.12.jar         | None                                     |
+	| LCHIJA | phosphor-lighting                 | 1.12.2-0.2.6             | phosphor-1.12.2-0.2.6+build50-universal.jar     | f0387d288626cc2d937daa504e74af570c52a2f1 |
+
+	Loaded coremods (and transformers): 
+XaeroMinimapPlugin (Xaeros_Minimap_21.15.0.1_Forge_1.12.jar)
+  xaero.common.core.transformer.ChunkTransformer
+  xaero.common.core.transformer.NetHandlerPlayClientTransformer
+  xaero.common.core.transformer.EntityPlayerTransformer
+  xaero.common.core.transformer.AbstractClientPlayerTransformer
+  xaero.common.core.transformer.WorldClientTransformer
+  xaero.common.core.transformer.EntityPlayerSPTransformer
+  xaero.common.core.transformer.PlayerListTransformer
+  xaero.common.core.transformer.GuiIngameForgeTransformer
+  xaero.common.core.transformer.GuiBossOverlayTransformer
+  xaero.common.core.transformer.ModelRendererTransformer
+TransformLoader (DynamicSurroundings-1.12.2-3.6.1.0.jar)
+  
+IELoadingPlugin (ImmersiveEngineering-core-0.12-98.jar)
+  blusunrize.immersiveengineering.common.asm.IEClassTransformer
+LittlePatchingLoader (LittleTiles_v1.5.20_mc1.12.2.jar)
+  com.creativemd.littletiles.LittleTilesTransformer
+TransformerLoader (OpenComputers-MC1.12.2-1.7.5.192.jar)
+  li.cil.oc.common.asm.ClassTransformer
+OTGCorePlugin (OTG-Core.jar)
+  com.pg85.otg.forge.asm.excluded.OTGClassTransformer
+Do not report to Forge! (If you haven't disabled the FoamFix coremod, try disabling it in the config! Note that this bit of text will still appear.) (foamfix-0.10.14-1.12.2.jar)
+  pl.asie.foamfix.coremod.FoamFixTransformer
+BewitchmentFMLLoadingPlugin (bewitchment-1.12.2-0.0.22.64.jar)
+  
+CreativePatchingLoader (CreativeCore_v1.10.63_mc1.12.2.jar)
+  
+CTMCorePlugin (CTM-MC1.12.2-1.0.2.31.jar)
+  team.chisel.ctm.client.asm.CTMTransformer
+AdvancedRocketryPlugin (AdvancedRocketry-1.12.2-1.7.0-232-universal.jar)
+  zmaster587.advancedRocketry.asm.ClassTransformer
+EnderCorePlugin (EnderCore-1.12.2-0.5.76-core.jar)
+  com.enderio.core.common.transform.EnderCoreTransformer
+  com.enderio.core.common.transform.SimpleMixinPatcher
+PhosphorFMLLoadingPlugin (phosphor-1.12.2-0.2.6+build50-universal.jar)
+  
+MalisisCorePlugin (malisiscore-1.12.2-6.5.1.jar)
+  
+	GL info: ' Vendor: 'Intel Inc.' Version: '2.1 INTEL-16.4.5' Renderer: 'Intel Iris Pro OpenGL Engine'
+	Ender IO: No known problems detected.
+	Authlib is : /Users/tristanpoland/Library/Application%20Support/gdlauncher_next/datastore/libraries/com/mojang/authlib/1.5.25/authlib-1.5.25.jar
+
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!You are looking at the diagnostics information, not at the crash.       !!!
+	!!!Scroll up until you see the line with '---- Minecraft Crash Report ----'!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+	Pulsar/tconstruct loaded Pulses: 
+		- TinkerCommons (Enabled/Forced)
+		- TinkerWorld (Enabled/Not Forced)
+		- TinkerTools (Enabled/Not Forced)
+		- TinkerHarvestTools (Enabled/Forced)
+		- TinkerMeleeWeapons (Enabled/Forced)
+		- TinkerRangedWeapons (Enabled/Forced)
+		- TinkerModifiers (Enabled/Forced)
+		- TinkerSmeltery (Enabled/Not Forced)
+		- TinkerGadgets (Enabled/Not Forced)
+		- TinkerOredict (Enabled/Forced)
+		- TinkerIntegration (Enabled/Forced)
+		- TinkerFluids (Enabled/Forced)
+		- TinkerMaterials (Enabled/Forced)
+		- TinkerModelRegister (Enabled/Forced)
+		- chiselIntegration (Enabled/Not Forced)
+		- wailaIntegration (Enabled/Not Forced)
+
+	AE2 Version: stable rv6-stable-7 for Forge 14.23.5.2768
+	Patchouli open book context: n/a
+	AE2 Integration: IC2:OFF, RC:OFF, MFR:OFF, Waila:ON, InvTweaks:OFF, JEI:ON, Mekanism:OFF, OpenComputers:ON, THE_ONE_PROBE:OFF, TESLA:OFF, CRAFTTWEAKER:OFF
+	Launched Version: 1.12.2
+	LWJGL: 2.9.2
+	OpenGL: Intel Iris Pro OpenGL Engine GL version 2.1 INTEL-16.4.5, Intel Inc.
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because ARB_framebuffer_object is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: 
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	CPU: <unknown>

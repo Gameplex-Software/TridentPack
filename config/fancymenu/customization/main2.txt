@@ -1,0 +1,60 @@
+type = menu
+
+customization-meta {
+  identifier = fossilsarcheology.client.gui.FAMainMenuGUI
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  path = resources/overlay.png
+  orientation = mid-right
+  x = -103
+  width = 103
+  actionid = fbfe6926-ba87-4be0-accc-43b82366dbab1629463243725
+  action = addtexture
+  y = -113
+  height = 129
+}
+
+customization {
+  showname = true
+  orientation = mid-right
+  crouching = false
+  x = -80
+  slim = false
+  actionid = 78a37ab6-7ce6-4829-b13a-e82707ff4c9e1629463275911
+  action = addentity
+  y = -24
+  scale = 30
+  playername = TristanPoland
+  parrot = false
+}
+
+customization {
+  orientation = mid-right
+  shadow = false
+  x = -75
+  actionid = ba88da11-6fa7-427a-80a2-382a3548433a1629463331967
+  action = addtext
+  y = -110
+  scale = 1.0
+  alignment = left
+  value = Developer
+}
+
+customization {
+  orientation = mid-right
+  buttonaction = openlink
+  x = -67
+  width = 59
+  actionid = f5fd2513-f82c-4be6-a3d4-7c122c449c7f1629463373571
+  action = addbutton
+  y = -43
+  label = About
+  value = 
+  height = 20
+}
+

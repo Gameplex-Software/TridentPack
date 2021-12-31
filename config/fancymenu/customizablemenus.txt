@@ -1,0 +1,20 @@
+type = customizablemenus
+
+net.minecraft.client.gui.GuiIngameMenu {
+}
+
+com.pg85.otg.forge.gui.mainmenu.OTGGuiWorldSelection {
+}
+
+com.pg85.otg.forge.gui.presets.OTGGuiPresetList {
+}
+
+com.pg85.otg.forge.gui.dimensions.OTGGuiDimensionList {
+}
+
+com.pg85.otg.forge.gui.OTGGuiEnterWorldName {
+}
+
+fossilsarcheology.client.gui.FAMainMenuGUI {
+}
+

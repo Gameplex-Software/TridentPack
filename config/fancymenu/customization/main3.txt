@@ -1,0 +1,33 @@
+type = menu
+
+customization-meta {
+  identifier = fossilsarcheology.client.gui.FAMainMenuGUI
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  path = resources/title.png
+  orientation = top-centered
+  x = -137
+  width = 280
+  actionid = b228512c-7ce8-41ca-b76d-95d4f8e3baed1629824868701
+  action = addtexture
+  y = 94
+  height = 36
+}
+
+customization {
+  orientation = top-centered
+  shadow = false
+  x = -72
+  actionid = cf65e4b8-8991-43a1-a6b7-b31d2c4f88e01629824933740
+  action = addtext
+  y = 131
+  scale = 1.0
+  alignment = left
+  value = A modpack by: Tristan Poland!
+}
+

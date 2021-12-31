@@ -1,0 +1,41 @@
+type = menu
+
+customization-meta {
+  identifier = com.pg85.otg.forge.gui.presets.OTGGuiPresetList
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  identifier = %id=10961%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=170961%
+  orientation = bottom-centered
+  x = -165
+  action = movebutton
+  y = -25
+}
+
+customization {
+  identifier = %id=88937%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=10937%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=170937%
+  orientation = bottom-centered
+  x = -165
+  action = movebutton
+  y = -49
+}
+
