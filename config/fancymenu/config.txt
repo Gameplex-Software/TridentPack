@@ -34,8 +34,8 @@ B:hideforgenotifications = 'false';
 
 S:splashcolor = '#ffff00';
 I:splashrotation = '-20';
-I:splashy = '0';
-I:splashx = '0';
+I:splashy = '30';
+I:splashx = '50';
 B:hidesplashtext = 'false';
 S:splashtextfile = '';
 S:splashorientation = 'original';

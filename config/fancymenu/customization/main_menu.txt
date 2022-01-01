@@ -1,0 +1,26 @@
+type = menu
+
+customization-meta {
+  identifier = net.minecraft.client.gui.GuiMainMenu
+  randomgroup = 1
+  renderorder = background
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  path = resources/logouhd.jpg
+  action = texturizebackground
+}
+
+customization {
+  path = resources/name.png
+  orientation = top-centered
+  x = -150
+  width = 300
+  actionid = 8ff54ff8-ed1a-4f10-bf40-b70254cd1fb71640986039450
+  action = addtexture
+  y = 32
+  height = 53
+}
+

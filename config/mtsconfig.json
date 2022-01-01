@@ -158,6 +158,9 @@
         "lava": 1.0,
         "gasoline": 1.0,
         "ethanol": 0.85
+      },
+      "water": {
+        "lava": 1.0
       }
     },
     "lastLoadedFluids": {

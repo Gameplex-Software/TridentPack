@@ -5,7 +5,7 @@ fov:0.0
 gamma:0.0
 saturation:0.0
 renderDistance:9
-guiScale:3
+guiScale:2
 particles:1
 bobView:true
 anaglyph3d:false
@@ -85,6 +85,8 @@ key_key.hotbar.6:7
 key_key.hotbar.7:8
 key_key.hotbar.8:9
 key_key.hotbar.9:10
+key_Reload Menu | CTRL + ALT + :19
+key_Toggle Customization Overlay | CTRL + ALT + :46
 key_keybind.baublesinventory:48
 key_key.ebwizardry.next_spell:49
 key_key.ebwizardry.previous_spell:48
@@ -96,6 +98,7 @@ key_key.ebwizardry.spell_5:6:ALT
 key_key.ebwizardry.spell_6:7:ALT
 key_key.ebwizardry.spell_7:8:ALT
 key_key.ebwizardry.spell_8:9:ALT
+key_key.xu2.searchforitems:20
 key_Open Menu:43
 key_Toggle Freeze Effect:0
 key_Enable/Disable:0
@@ -122,6 +125,7 @@ key_waila.keybind.wailadisplay:79
 key_waila.keybind.liquid:80
 key_waila.keybind.recipe:81
 key_waila.keybind.usage:75
+key_key.mts.config:25
 key_key.rotateup:200
 key_key.rotatedown:208
 key_key.rotateright:205
@@ -131,8 +135,6 @@ key_key.little.mark:50
 key_key.little.config.item:46
 key_key.little.undo:44:CONTROL
 key_key.little.redo:21:CONTROL
-key_Mo' Bends Menu:34
-key_Refresh Animations:68
 key_key.otghud.desc:24
 key_WorldEdit Reference:38
 key_worldeditcuife3.key.cui.options:0
